@@ -46,7 +46,8 @@
         }
 
         .rightNav {
-            text-align: right;
+            display: flex;
+            gap: 10px;
         }
 
         #search {
@@ -67,7 +68,7 @@
         }
 
     .btncadastrar {
-                background-color: ;
+                background-color: rgb(212, 208, 208);
                 color: #000;
                 border: none;
                 padding: 8px 12px;
@@ -75,6 +76,7 @@
                 cursor: pointer;
                 transition: background-color 0.3s ease-in-out;
             }
+
 
         .logo {
                     background-color: rgb(17, 0, 255);
@@ -95,7 +97,60 @@
             color: #ffd700;
         }
 
-        .title {
-                padding: 50px 666px;
+        .btncadastrar:hover {
+            background-color: #000000;
+            color: #d4d0d0;
+        }
 
+        main { 
+            min-height: 100vh;
+            background: linear-gradient(to right, rgb(255, 255, 255), rgb(184, 211, 255) )}
+        
+        
+        .title {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                position: relative;
+                top: 10vh;
+        }
+
+        #matematica {
+            display: flex;
+            position: relative;
+            top: 16vh;
+            left: 14vh;
+        }
+
+        main button {
+            padding: 02rem;
+            border-color: rgb(122, 200, 252);
+            background-color: rgb(255, 255, 255);
+            border-radius: 01rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        main button:hover {
+            background-color: rgb(122, 200, 252);
+            color:rgb(255, 255, 255)
+        }
+
+        #fisica {
+            display: flex;
+            position: relative;
+            top: 20vh;
+            left: 14.1vh;}
+
+        #fisica button {
+            padding: 02rem 3.2rem;
+        }
+        
+        #quimica {display: flex;
+            position: relative;
+            top: 24vh;
+            left: 14.5vh;}
+
+        #quimica button {
+            padding: 02rem 2.6rem;
         }
