@@ -1,6 +1,7 @@
 * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         body {
@@ -14,24 +15,17 @@
             justify-content: space-between;
             top: 0px;
             background: rgb(39, 176, 255);
-            background-blend-mode: darken;
-            background-size: cover;
             color: white;
             padding: 10px 20px;
+            flex-wrap: wrap;
         }
 
         .nav-list {
             display: flex;
             list-style: none;
+            gap: 20px;
         }
 
-        .nav-list li {
-            margin-right: 20px;
-        }
-
-        .nav-list li:last-child {
-            margin-right: 0;
-        }
 
         .nav-list li a {
             text-decoration: none;
@@ -104,22 +98,25 @@
 
         main { 
             min-height: 100vh;
-            background: linear-gradient(to right, rgb(255, 255, 255), rgb(184, 211, 255) )}
+            background: linear-gradient(to right, rgb(255, 255, 255), rgb(184, 211, 255) );
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            padding: 20px;}
         
         
         .title {
-                display: flex;
-                justify-content: center;
-                align-content: center;
-                position: relative;
-                top: 10vh;
+                text-align: center;
         }
 
-        #matematica {
+        .cards {
             display: flex;
-            position: relative;
-            top: 16vh;
-            left: 14vh;
+            flex-direction: column;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         main button {
@@ -127,8 +124,10 @@
             border-color: rgb(122, 200, 252);
             background-color: rgb(255, 255, 255);
             border-radius: 01rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
             cursor: pointer;
             transition: background-color 0.3s ease-in-out;
+            min-width: 200px;
         }
 
         main button:hover {
@@ -136,21 +135,41 @@
             color:rgb(255, 255, 255)
         }
 
-        #fisica {
-            display: flex;
-            position: relative;
-            top: 20vh;
-            left: 14.1vh;}
+        @media (max-width: 768px) {
 
-        #fisica button {
-            padding: 02rem 3.2rem;
-        }
-        
-        #quimica {display: flex;
-            position: relative;
-            top: 24vh;
-            left: 14.5vh;}
+    .navbar {
+        flex-direction: baseline;
+        gap: 20px;
+        padding: 10px;
+    }
 
-        #quimica button {
-            padding: 02rem 2.6rem;
-        }
+    .logo {
+        justify-content: flex-start;
+    }
+    .cursoslivres {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .rightNav {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    main button {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+    
