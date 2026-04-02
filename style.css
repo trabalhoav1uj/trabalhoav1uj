@@ -114,10 +114,18 @@
         .cards {
             display: flex;
             flex-direction: column;
-            gap: 20px;
             flex-wrap: wrap;
             justify-content: center;
+            gap: 20px;
         }
+
+        .cards-groups {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+        }
+
 
         main button {
             padding: 02rem;
@@ -156,10 +164,19 @@
         width: 100%;
         justify-content: space-between;
     }
-
+    
     .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+
+    }
+
+    .cards-groups {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
 
     main {
