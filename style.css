@@ -51,9 +51,8 @@
             border-radius: 5px;
         }
 
-        .btn {
+        .btnentrar {
             background-color: #ffe100;
-            color: #000;
             border: none;
             padding: 8px 12px;
             border-radius: 5px;
@@ -61,14 +60,35 @@
             transition: background-color 0.3s ease-in-out;
         }
 
+        .btnentrar a {
+            text-decoration: none;
+            color: #000;
+            cursor: pointer;
+            transition: ease-in-out;
+        }   
+
+        .btnentrar a:hover {
+            color: #ffe100;
+        }
+
     .btncadastrar {
                 background-color: rgb(212, 208, 208);
-                color: #000;
                 border: none;
                 padding: 8px 12px;
                 border-radius: 5px;
                 cursor: pointer;
                 transition: background-color 0.3s ease-in-out;
+            }
+
+            .btncadastrar a {
+                text-decoration: none;
+                color: #000;
+                cursor: pointer;
+                transition: ease-in-out;
+            }
+
+            .btncadastrar a:hover {
+                color: rgb(212, 208, 208);
             }
 
 
@@ -86,7 +106,7 @@
                 padding: 7px;
             }
 
-        .btn:hover {
+        .btnentrar:hover {
             background-color: #000;
             color: #ffd700;
         }

@@ -1,8 +1,38 @@
-document.getElementById('loginForm').addEventListener('submit', function(e) {
+const loginScreen = document.getElementById('loginscreen');
+const registerScreen = document.getElementById('registerscreen');
+const goToRegister = document.getElementById('goToRegister');
+const goToLogin = document.getElementById('goToLogin');
+
+goToRegister.addEventListener('click', function(e) {
+    e.preventDefault();
+    loginScreen.style.display = 'none';
+    registerScreen.style.display = 'block';
+});
+
+goToLogin.addEventListener('click', function(e) {
+    e.preventDefault();
+    registerScreen.style.display = 'none';
+    loginScreen.style.display = 'block';
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+    const params = new URLSearchParams(window.location.search);
+    const screen = params.get('screen');
+
+    if (screen === 'register') {
+        loginScreen.style.display = 'none';
+        registerScreen.style.display = 'block';
+    } else {
+        loginScreen.style.display = 'block';
+        registerScreen.style.display = 'none';
+    }
+});
+
+document.getElementById('loginform').addEventListener('submit', function(e) {
     e.preventDefault();
     
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
+    const email = document.getElementById('emaillogin').value;
+    const password = document.getElementById('passwordlogin').value;
 
     // Validação básica
     if (email && password) {
@@ -19,8 +49,25 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
             btn.style.opacity = '1';
             
             // Limpar os campos
-            document.getElementById('email').value = '';
-            document.getElementById('password').value = '';
+            this.reset();
         }, 1500);
     }
+});
+
+document.getElementById('registerform').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const senha = document.getElementById('passwordregister').value;
+    const confirmSenha = document.getElementById('confirmPassword').value;
+
+    if (senha !== confirmSenha) {
+        alert('As senhas não coincidem. Por favor, tente novamente.');
+        return;
+    }
+
+    alert('Registro realizado com sucesso no Cursos Livres!');
+
+    registerScreen.style.display = 'none';
+    loginScreen.style.display = 'block';
+    this.reset();
 });
