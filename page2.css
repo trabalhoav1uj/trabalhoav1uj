@@ -5,6 +5,11 @@
     font-family: 'Inter', sans-serif;
 }
 
+body {
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+}
+
 .navbar {
     display: flex;
             position: sticky;

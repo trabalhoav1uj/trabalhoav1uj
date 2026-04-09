@@ -1,3 +1,4 @@
-document.getElementsByClassName("course-button").addEventListener("click", function() {
-    window.location.href = "Page3/page3.html";
+const courseButtons = document.getElementsByClassName("course-button");
+courseButtons[0].addEventListener("click", function() {
+    window.location.href = "page3.html";
 });
