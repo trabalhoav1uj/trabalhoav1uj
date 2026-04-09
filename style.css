@@ -163,9 +163,19 @@
             font-weight: 700;
         }
 
+        .course-button a {
+            text-decoration: none;
+            color: #000;
+        }
+
         main button:hover {
             background-color: rgb(122, 200, 252);
             color:rgb(255, 255, 255)
+        }
+
+        footer {
+            background:rgb(39, 176, 255);
+            padding: 10px;
         }
 
         @media (max-width: 768px) {
