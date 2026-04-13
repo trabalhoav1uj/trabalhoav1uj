@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+        <meta name="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login-Cursos Livres</title>
+    <link rel="stylesheet" href="page2.css">
+</head>
+<body>
+    <nav class="navbar">
+         <ul class="nav-list">
+            <li class="logo"><a href="../index.html">CS</a></li>
+            <li class="cursoslivres"><a href="../index.html">Cursos livres</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="login-container"><div class="logo2"><span>Cursos livres</span>
+        <div id="loginscreen">
+        <h2>Bem-vindo de volta!</h2>
+            <form id="loginform">
+                <div class="form-group">
+                    <label for="emaillogin">E-mail </label>
+                    <input type="email" id="emaillogin" placeholder="Digite seu e-mail" required></input>
+                    <label for="passwordlogin">Senha</label>
+                    <input type="password" id="passwordlogin" placeholder="Digite sua senha" required>
+                </div>
+                <button type="submit"class="btn-login">Entrar</button>
+                 <div class="footer-links">
+                <p><a href="#">Esqueceu sua senha?</a></p>
+                    <div class="divider"></div>
+                <p>Não tem conta? <a href="#" id="goToRegister">Cadastre-se agora</a></p>
+                </div>
+            </div>
+             </form>
+        </div>
+        <div id="registerscreen" style="display: none;">
+        <h2>Cadastre-se</h2>
+             <form id="registerform">
+                <div class="form-group">
+                    <label for="name">Nome completo</label>
+                    <input type="text" id="name" placeholder="Digite seu nome completo" required>
+                    <label for="emailcadastro">E-mail</label>
+                    <input type="email" id="emailcadastro" placeholder="Digite seu e-mail" required></input>
+                    <label for="passwordcadastro">Senha</label>
+                    <input type="password" id="password" placeholder="Crie uma senha" required>
+                    <label for="confirm-password">Confirmar senha</label>
+                    <input type="password" id="confirm-password" placeholder="Confirme sua senha">
+                    <br>
+                    <br>
+                    <h3>Tipo de usuário</h3>
+                    <br>
+                    <div class="radio-group">
+                        <input type="radio" id="professor" name="gender" value="professor">
+                        <label for="professor">Professor</label>
+                        <input type="radio" id="aluno" name="gender" value="aluno">
+                        <label for="aluno">Aluno</label>
+                    </div>
+                    <button type="submit" class="btn-login">Registrar</button>
+                    <div class="footer-links">
+                <p>Já tem conta? <a href="#" id="goToLogin">Entre aqui</a></p>
+                </div>
+            </div>
+             </form>
+                </div>
+             </form>
+        </div>
+    </div>
+    </main>
+    <footer>
+       <a href="#" class="github"><img src="./25231.png" name="github" class="github" width="50"></a>
+    </footer>
+    <script src="page2.js"></script>
+</body>
+</html>
