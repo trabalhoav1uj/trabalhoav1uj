@@ -1,230 +1,212 @@
 * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        body {
-            font-family: 'Arial', sans-serif;
-            font-weight: 700;
-        }
-
-        .navbar {
-            display: flex;
-            position: sticky;
-            align-items: center;
-            justify-content: space-between;
-            top: 0px;
-            background: rgb(39, 176, 255);
-            color: white;
-            padding: 10px 20px;
-            flex-wrap: wrap;
-        }
-
-        .nav-list {
-            display: flex;
-            list-style: none;
-            gap: 20px;
-        }
+body {
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+}
 
 
-        .nav-list li a {
-            text-decoration: none;
-            color: white;
-            font-size: 18px;
-            transition: color 0.3s ease-in-out;
-        }
+.navbar {
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: space-between;
+    top: 0px;
+    background: rgb(39, 176, 255);
+    color: white;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
 
-        .nav-list li a:hover {
-            color: #ffd700;
-            /* Change the color on hover */
-        }
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
 
-        .rightNav {
-            display: flex;
-            gap: 10px;
-        }
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
 
-        #search {
-            padding: 8px;
-            font-size: 16px;
-            border: 2px solid #fff;
-            border-radius: 5px;
-        }
+.nav-list li a:hover {
+    color: #ffd700;
+}
 
-        .btnentrar {
-            background-color: #ffe100;
-            border: none;
-            padding: 8px 12px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease-in-out;
-        }
+.rightNav {
+    display: flex;
+    gap: 10px;
+}
 
-        .btnentrar,
-        .btncadastrar {
-            text-decoration: none;
-            display: inline-block;
-            color: #000;
-        } 
+.btnentrar,
+.btncadastrar {
+    text-decoration: none;
+    display: inline-block;
+    color: #000;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-        .btnentrar a:hover {
-            color: #ffe100;
-        }
+.btnentrar {
+    background-color: #ffe100;
+}
 
-    .btncadastrar {
-                background-color: rgb(212, 208, 208);
-                border: none;
-                padding: 8px 12px;
-                border-radius: 5px;
-                cursor: pointer;
-                transition: background-color 0.3s ease-in-out;
-            }
+.btncadastrar {
+    background-color: rgb(212, 208, 208);
+}
 
-            .btncadastrar a {
-                text-decoration: none;
-                color: #000;
-                cursor: pointer;
-                transition: ease-in-out;
-            }
+.btnentrar:hover {
+    background-color: #000;
+    color: #ffd700;
+}
 
-            .btncadastrar a:hover {
-                color: rgb(212, 208, 208);
-            }
+.btncadastrar:hover {
+    background-color: #000;
+    color: #d4d0d0;
+}
 
+.logo {
+    background-color: rgb(17, 0, 255);
+    padding: 7px 8px;
+    border-radius: 5px;
+}
 
-        .logo {
-                    background-color: rgb(17, 0, 255);
-                    color: #000;
-                    border: none;
-                    padding: 7px 8px;
-                    border-radius: 5px;
-                    cursor: pointer;
-                    transition: background-color 0.3s ease-in-out;
-                }
-
-            .cursoslivres {
-                padding: 7px;
-            }
-
-        .btnentrar:hover {
-            background-color: #000;
-            color: #ffd700;
-        }
-
-        .btncadastrar:hover {
-            background-color: #000000;
-            color: #d4d0d0;
-        }
-
-        main { 
-            min-height: 100vh;
-            background: linear-gradient(to right, rgb(255, 255, 255), rgb(184, 211, 255) );
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 30px;
-            padding: 20px;}
-        
-        
-        .title {
-                text-align: center;
-        }
-
-        
-
-        .cards {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .cards-groups {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            justify-content: center;
-        }
+.cursoslivres {
+    padding: 7px;
+}
 
 
-        main button {
-            padding: 02rem;
-            border-color: rgb(122, 200, 252);
-            background-color: rgb(255, 255, 255);
-            border-radius: 01rem;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-            cursor: pointer;
-            transition: background-color 0.3s ease-in-out;
-            min-width: 200px;
-        }
+main {
+    min-height: 100vh;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(184, 211, 255));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
 
-        .course-button {
-            font-weight: 700;
-        }
+main button:hover { background-color: rgb(122, 200, 252); color: #fff; }
 
-        .course-button a {
-            text-decoration: none;
-            color: #000;
-        }
+.course-button {
+    padding: 2rem;
+    border: 2px solid rgb(122, 200, 252);
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+    transition: 0.3s;
+    min-width: 250px;
+    font-size: 18px;
+    color: #000;
+}
 
-        main button:hover {
-            background-color: rgb(122, 200, 252);
-            color:rgb(255, 255, 255)
-        }
+@media (max-width: 768px) {
+    .course-button {
+    display: block;
+    margin: 0 auto;
+    }
+}
 
-        footer {
-            background:rgb(39, 176, 255);
-            padding: 10px;
-        }
+.botao-home:hover {
+    background-color: rgb(122, 200, 252);
+    color: #fff;
+}
 
-        @media (max-width: 768px) {
+.botao-materia {
+    padding: 2rem;
+    border: 2px solid rgb(122, 200, 252);
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+    transition: 0.3s;
+    min-width: 170px;
+}
+
+.botao-materia:hover {
+    background-color: rgb(122, 200, 252);
+    color: #fff;
+}
+
+
+#aritimetica-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+}
+
+.item button {
+    width: 100%;
+}
+
+.title {
+color:#000
+}
+
+.conteudo {
+    margin-top: 10px;
+    width: 100%;
+    text-align: left;
+}
+
+.conteudo ul {
+    padding-left: 20px;
+}
+
+.conteudo li {
+    margin-bottom: 5px;
+}
+
+
+footer {
+    background: rgb(39, 176, 255);
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
 
     .navbar {
-        flex-direction: baseline;
         gap: 20px;
         padding: 10px;
     }
 
-    .logo {
-        text-align: center;
-        justify-content: center;
-    }
-
     .cursoslivres {
         display: none;
-        width: 100%;
-        text-align: center;
-        justify-content: center;
     }
 
     .rightNav {
-        width: 100%;
+        width: 53%;
         justify-content: space-between;
-    }
-    
-    .cards {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 20px;
-
-    }
-
-    .cards-groups {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
 
     main {
         padding: 15px;
     }
 
-    main button {
+    .botao-home {
         width: 100%;
         max-width: 300px;
+    }
+
+    .botao-materia {
+        width: 100%;
+        max-width: 200px;
     }
 }
